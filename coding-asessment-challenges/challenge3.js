@@ -14,8 +14,8 @@ function sortWords(str){
         return newIndexes;
     })
 
-
     const wordsSorted = words.map((word, index) => {
+        // this targetIndex was the hardest to think :( !
         targetIndex = Number(newIndexArr[index]-1);
         return words[targetIndex];      
     });
@@ -24,15 +24,9 @@ function sortWords(str){
 
     const rejoinedWords = wordsSorted.join(" ")
     console.log(rejoinedWords);
-
     
-
-    // join to string
+    return rejoinedWords;
 }
-
-
-
-
 
 sortWords("is2 Thi1s T4est 3a");
 
