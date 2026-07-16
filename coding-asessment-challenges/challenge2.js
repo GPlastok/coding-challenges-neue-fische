@@ -2,8 +2,8 @@ console.log("Challenge 2");
 
 
 function maskify(str) {
-    strArr = [...str];
-    strArrMasked = strArr.map((element, index) => (index < strArr.length - 4)? element = "#" : element = element);
+    const strArr = [...str];
+    const strArrMasked = strArr.map((element, index) => (index < strArr.length - 4)? "#" : element);
     
     const maskified = strArrMasked.join("");
     console.log(maskified);
