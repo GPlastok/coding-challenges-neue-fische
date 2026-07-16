@@ -1,7 +1,11 @@
 {
   "4kyu": [],
   "5kyu": [],
-  "6kyu": [],
+  "6kyu": [
+    "string-subpattern-recognition-i"
+  ],
   "7kyu": [],
-  "8kyu": []
+  "8kyu": [
+    "filter-out-the-geese"
+  ]
 }
