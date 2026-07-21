@@ -13,6 +13,20 @@ import { test } from "@/test.ts";
 
 function hasSubpattern(s: string): boolean {
   // your code here
+  let strStatus: boolean = false;
+  let letters: string;
+  for (const letter of s) {
+    if (letter === s[s.indexOf(letter) - 1]) {
+      strStatus = true;
+    } else if (
+      s.slice(s.indexOf(letter) - 1, s.indexOf(letter)) ===
+      s.slice(s.indexOf(letter) - 3, s.indexOf(letter) - 2)
+    ) {
+      strStatus = true;
+    } else strStatus = false;
+  }
+
+  return strStatus;
 }
 
 test(hasSubpattern("a"), false);
